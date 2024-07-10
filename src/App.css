@@ -32,6 +32,8 @@ body{
   justify-content: center;
   align-items: center;
   gap: 5px;
+  border: solid 1px black;
+  border-radius: 5px;
   /* background-color:bisque; */
   margin-left: 460px;
 }
