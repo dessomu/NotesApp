@@ -63,21 +63,23 @@ function App() {
   }
 
   function updateHandler() {
-    const updatedNotes = notes.map((note) => {
-      if (note.id === selectedNoteId) {
-        return {
-          ...note,
-          title: updateTitle,
-          note: updateNote,
-        };
-      } else {
-        return note;
-      }
-    });
-
-    setNotes(updatedNotes);
-
-    okClose();
+    if ((updateNote !== "") & (updateTitle !== "")) {
+      const updatedNotes = notes.map((note) => {
+        if (note.id === selectedNoteId) {
+          return {
+            ...note,
+            title: updateTitle,
+            note: updateNote,
+          };
+        } else {
+          return note;
+        }
+      });
+      setNotes(updatedNotes);
+      okClose();
+    } else {
+      alert("Blank Title or Note");
+    }
   }
 
   function okClose() {
