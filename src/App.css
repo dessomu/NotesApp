@@ -1,0 +1,189 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body{
+  background-color:dimgrey;
+}
+.header{
+  width: 100%;
+  height: 50px;
+  padding: 20px 5px 20px 5px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-content-container{
+  width: 100%;
+  height: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color:white;
+  display: flex;
+  align-items: center;
+}
+
+.add-note{
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  /* background-color:bisque; */
+  margin-left: 460px;
+}
+.add-note:hover{
+  cursor: pointer;
+  border: solid 1px transparent;
+  background-color:bisque;
+}
+.add-note p{
+  width: 100px;
+  font-size: 16px;
+  font-weight:bold;
+  /* color: antiquewhite; */
+}
+.add-note img{
+  border:solid 2px bisque;
+}
+
+.input-container{
+  position: fixed;
+  top: 50px;
+  left: 540px;
+  width: 350px;
+  background-color:bisque;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.input-container label{
+  font-size: 15px;
+  font-weight: 500;
+}
+.input-container input{
+padding: 8px;
+border: solid 1px transparent;
+border-radius: 8px;
+}
+.add{
+  position: absolute;
+  bottom: 20px ;
+  left: 145px;
+  width: 60px;
+  padding: 5px;
+  border: solid 0.5px transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white;
+}
+.main{
+  width: 100%;
+  height: 100vh;
+  background-color: darkgray;
+  display: flex;
+  gap: 3px;
+}
+.notes{
+  display: flex;
+  flex-direction: column;
+  width: 203px;
+  height:max-content;
+  gap: 2px;
+  /* background-color: black; */
+}
+.note{
+  width: 203px;
+  position: relative;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 18px;
+  background-color:beige;
+  border: solid 0.5px transparent;
+  border-radius: 5px;
+}
+.note .title{
+  font-size: large;
+  font-weight:bold;
+  margin-bottom: 5px;
+}
+.note .note-content{
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.edit{
+  border: solid transparent;
+  width: 60px;
+  border-radius: 3px;
+  margin-left: 100px;
+}
+.delete{
+  border: solid transparent;
+  border-radius: 3px;
+  margin-top: 5px;
+}
+.modal{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner-modal{
+  width: 300px;
+  position: relative;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  background-color: rgb(178, 185, 192);
+  border: solid transparent;
+  border-radius: 5px;
+}
+.inner-modal input{
+  padding: 5px;
+  border: solid transparent;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+.inner-modal button{
+  width: 60px;
+  padding: 3px;
+  position: absolute;
+  border: solid transparent;
+  border-radius: 3px;
+  color: aliceblue;
+}
+.update{
+  background-color:darkslategray;
+  left: 40px;
+  bottom: 10px;
+}
+.ok{
+  background-color:sienna;
+  right: 40px;
+  bottom: 10px;
+}
+.search-bar{
+  border: solid 1px black;
+  border-radius: 5px;
+  padding: 3px;
+  background-color: transparent;
+  margin-left: 400px;
+}
+.search-bar .search{
+  border: solid transparent;
+}
